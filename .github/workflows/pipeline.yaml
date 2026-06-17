@@ -29,8 +29,8 @@ jobs:
 
       - name: Build Image
         run: |
-          docker build -t gabrielcandidodev/aula-devops:1.1 .
+          docker build -t gabrielcandidodev/aula-devops:1.0 .
 
       - name: Push Image
         run: |
-          docker push gabrielcandidodev/aula-devops:1.1
+          docker push gabrielcandidodev/aula-devops:1.0
