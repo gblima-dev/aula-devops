@@ -29,10 +29,8 @@ jobs:
 
       - name: Build Image
         run: |
-          docker build -t gabrielcandidodev/aula-devops:latest \
-                       -t gabrielcandidodev/aula-devops:${{ github.run_number }} .
+          docker build -t gabrielcandidodev/aula-devops:1.0.${{ github.run_number }} .
 
       - name: Push Image
         run: |
-          docker push gabrielcandidodev/aula-devops:latest
-          docker push gabrielcandidodev/aula-devops:${{ github.run_number }}
+          docker push gabrielcandidodev/aula-devops:1.0.${{ github.run_number }}
